@@ -25,23 +25,23 @@
 // function tidyNumber(number) {
 //     const numString = number.toString(); // Convert the number to a string
 //     const numArray = numString.split("").map(Number); // Split the string and convert each character to a number
-  
+
 //     for (let i = 0; i < numArray.length - 1; i++) {
 //       const firstDigit = numArray[i];
 //       const secondDigit = numArray[i + 1];
-  
+
 //       if (firstDigit > secondDigit) {
 //         return false; // Digits are not in non-decreasing order
 //       }
 //     }
-  
+
 //     return true; // Digits are in non-decreasing order
 //   }
-  
+
 //   // Example usage:
 //   console.log(tidyNumber(3716581)); // Output: false
 //   console.log(tidyNumber(123));     // Output: true
-  
+
 
 
 /* function tidyNumber(number) {
@@ -80,7 +80,7 @@
 
 // function countLettersInArray(arr) {
 //     const letterCount = {};
-  
+
 //     for (const word of arr) {
 //       for (const letter of word) {
 //         if (letterCount[letter]) {
@@ -90,12 +90,44 @@
 //         }
 //       }
 //     }
-  
+
 //     return letterCount;
 //   }
-  
+
 //   const ar2 = ["webbrain", "academy"];
 //   const letterCounts = countLettersInArray(ar2);
-  
+
 //   console.log(letterCounts);
-  
+
+
+//? Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+
+// function fakeBin(x) {
+//   let result =''
+//   for(const value of x.toString()){
+//     console.log(value)
+//     if(value<5){
+//       result +='0';
+
+//     }else{
+//       result += "1"
+//     }
+//   }
+//   return result
+// }
+// console.log(fakeBin(53433))
+
+
+//?  Write a function insert_dash(num) / insertDash(num) / InsertDash(int num) that will insert dashes ('-') between each two odd digits in num. For example: if num is 454793 the output should be 4547-9-3.
+
+// Note that the number will always be non-negative (>= 0).
+
+
+function insertDash(num) {
+let number = num.toString()
+  for(let i=0; i<number; i++){
+    console.log(num[i]);
+  }
+}
+insertDash(1231231421)
